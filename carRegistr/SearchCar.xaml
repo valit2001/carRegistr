@@ -1,0 +1,24 @@
+﻿<Window x:Class="carRegistr.SearchCar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carRegistr"
+        mc:Ignorable="d"
+        Title="SearchCar" Height="700" Width="1100">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="168,169,0,0" TextWrapping="Wrap" Text="Select the search field:" VerticalAlignment="Top" Height="72" Width="255" RenderTransformOrigin="0.348,0.128" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="635,169,0,0" TextWrapping="Wrap" Text="Enter the value for search:" VerticalAlignment="Top" Height="72" Width="287" FontSize="24"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="487,429,0,0" VerticalAlignment="Top" Width="137" Height="59" RenderTransformOrigin="0.401,0.524" FontSize="20"/>
+        <Button Content="back" HorizontalAlignment="Left" Margin="66,49,0,0" VerticalAlignment="Top" Width="56" Height="28" Click="Button_Click"/>
+        <ComboBox x:Name="searchField" HorizontalAlignment="Left" Margin="168,246,0,0" VerticalAlignment="Top" Width="233" RenderTransformOrigin="0.495,-1.194" FontSize="16">
+            <TextBlock x:Name="searchCode" >Code</TextBlock>
+            <TextBlock x:Name="searchNumber" >Number</TextBlock>
+            <TextBlock x:Name="searchSeria" >Seria</TextBlock>
+            <TextBlock x:Name="searchModel" >Model</TextBlock>
+            <TextBlock x:Name="searchBrand" >Brand</TextBlock>
+        </ComboBox>
+        <TextBox x:Name="searchValue" HorizontalAlignment="Left" Height="35" Margin="635,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" FontSize="16"/>
+
+    </Grid>
+</Window>

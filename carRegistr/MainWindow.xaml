@@ -1,0 +1,21 @@
+﻿<Window x:Class="carRegistr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carRegistr"
+        mc:Ignorable="d"
+        Title="Car registrator" Height="700" Width="1100" WindowStyle="ThreeDBorderWindow">
+    <Grid x:Name="MainRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="292*"/>
+            <RowDefinition Height="377*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="406,101,354,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" IsEnabled="False" Text="Login:" FontFamily="Times New Roman" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Center" Margin="406,8,354,0" Grid.Row="1" TextWrapping="Wrap" Text=" Password:" VerticalAlignment="Top" Height="76" Width="332" FontSize="36"/>
+        <TextBox x:Name="logBox" HorizontalAlignment="Left" Height="35" Margin="406,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" TextChanged="TextBox_TextChanged" FontSize="18"/>
+        <TextBox x:Name="PassBox" HorizontalAlignment="Left" Height="35" Margin="406,89,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" TextChanged="TextBox_TextChanged_1" FontSize="18" RenderTransformOrigin="0.516,1.069"/>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="479,191,0,0" Grid.Row="1" VerticalAlignment="Top" Width="176" Height="60" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" Click="Button_Click"/>
+
+    </Grid>
+</Window>
