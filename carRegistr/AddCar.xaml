@@ -8,7 +8,6 @@
         Title="AddCar" Height="700" Width="1100">
     <Grid Height="669" VerticalAlignment="Bottom" Margin="10,0,0,0">
         <TextBlock HorizontalAlignment="Left" Margin="459,47,0,0" TextWrapping="Wrap" Text="Enter properties:" VerticalAlignment="Top" Width="181" Height="27" FontSize="24" FontFamily="Times New Roman" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="188,111,0,0" TextWrapping="Wrap" Text="Car:" VerticalAlignment="Top" Height="24" Width="97" RenderTransformOrigin="0.459,-0.337" FontFamily="Times New Roman" FontSize="18" TextAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Margin="770,102,0,0" TextWrapping="Wrap" Text="Owner:" VerticalAlignment="Top" Height="25" Width="99" RenderTransformOrigin="0.55,-0.643" FontFamily="Times New Roman" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="78,159,0,0" TextWrapping="Wrap" Text="Code:" VerticalAlignment="Top" Width="82" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="78,217,0,0" TextWrapping="Wrap" Text="Number:" VerticalAlignment="Top" FontSize="16"/>
@@ -16,26 +15,27 @@
         <TextBlock HorizontalAlignment="Left" Margin="78,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.487,1.413" Text="Brand:" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="78,387,0,0" TextWrapping="Wrap" Text="Model:" VerticalAlignment="Top" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="78,441,0,0" TextWrapping="Wrap" Text="Color:" VerticalAlignment="Top" RenderTransformOrigin="0.564,-0.193" FontSize="16"/>
-        <TextBox x:Name="carCode" HorizontalAlignment="Left" Height="23" Margin="188,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBox x:Name="carNum" HorizontalAlignment="Left" Height="23" Margin="188,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
-        <TextBox x:Name="carSeria" HorizontalAlignment="Left" Height="23" Margin="188,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="carCode" MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="188,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="carNum" MaxLength="4" HorizontalAlignment="Left" Height="23" Margin="188,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <TextBox x:Name="carSeria" MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="188,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
         <TextBox x:Name="carBrand" HorizontalAlignment="Left" Height="23" Margin="188,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
         <TextBox x:Name="carModel" HorizontalAlignment="Left" Height="23" Margin="188,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
         <TextBox x:Name="carColor" HorizontalAlignment="Left" Height="23" Margin="188,441,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
         <Button Content="back" HorizontalAlignment="Left" Margin="51,51,0,0" VerticalAlignment="Top" Width="42" FontSize="14" Click="Button_Click"/>
-        <Button Content="ADD CAR" HorizontalAlignment="Left" Margin="459,529,0,0" VerticalAlignment="Top" Width="127" Height="45" FontSize="18"/>
+        <Button Content="ADD CAR" HorizontalAlignment="Left" Margin="459,543,0,0" VerticalAlignment="Top" Width="127" Height="45" FontSize="18" Click="Button_Click_1" RenderTransformOrigin="0.5,1.345"/>
         <TextBlock HorizontalAlignment="Left" Margin="611,164,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" RenderTransformOrigin="0.891,-0.941" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="611,217,0,0" TextWrapping="Wrap" Text="Birthdate:" VerticalAlignment="Top" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="611,277,0,0" TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="-0.388,0.281"/>
         <TextBlock HorizontalAlignment="Left" Margin="611,333,0,0" TextWrapping="Wrap" Text="Tel:" VerticalAlignment="Top" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="611,387,0,0" TextWrapping="Wrap" Text="Place of work:" VerticalAlignment="Top" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="611,441,0,0" TextWrapping="Wrap" Text="Pasport:" VerticalAlignment="Top" RenderTransformOrigin="-0.59,2.123" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="611,441,0,0" TextWrapping="Wrap" Text="Passport:" VerticalAlignment="Top" RenderTransformOrigin="-0.59,2.123" FontSize="16"/>
         <TextBox x:Name="ownerName" HorizontalAlignment="Left" Height="23" Margin="770,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
         <TextBox x:Name="ownerBirthdate" HorizontalAlignment="Left" Height="23" Margin="770,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
         <TextBox x:Name="ownerAddress" HorizontalAlignment="Left" Height="23" Margin="770,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.477,-0.174"/>
-        <TextBox x:Name="ownerTel" HorizontalAlignment="Left" Height="23" Margin="770,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="ownerTel" MaxLength="10" HorizontalAlignment="Left" Height="23" Margin="770,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
         <TextBox x:Name="ownerWork" HorizontalAlignment="Left" Height="23" Margin="770,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
-        <TextBox x:Name="ownerPasport" HorizontalAlignment="Left" Height="23" Margin="770,441,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.33,-0.535"/>
+        <TextBox x:Name="ownerPasport" MaxLength="7" HorizontalAlignment="Left" Height="23" Margin="770,441,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.33,-0.535" TextChanged="ownerPasport_TextChanged"/>
+        <TextBox x:Name="ownerid" HorizontalAlignment="Left" Height="23" Margin="852,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
 
     </Grid>
 </Window>

@@ -9,7 +9,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="168,169,0,0" TextWrapping="Wrap" Text="Select the search field:" VerticalAlignment="Top" Height="72" Width="255" RenderTransformOrigin="0.348,0.128" FontSize="24"/>
         <TextBlock HorizontalAlignment="Left" Margin="635,169,0,0" TextWrapping="Wrap" Text="Enter the value for search:" VerticalAlignment="Top" Height="72" Width="287" FontSize="24"/>
-        <Button Content="Search" HorizontalAlignment="Left" Margin="487,429,0,0" VerticalAlignment="Top" Width="137" Height="59" RenderTransformOrigin="0.401,0.524" FontSize="20"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="487,429,0,0" VerticalAlignment="Top" Width="137" Height="59" RenderTransformOrigin="0.401,0.524" FontSize="20" Click="Button_Click_1"/>
         <Button Content="back" HorizontalAlignment="Left" Margin="66,49,0,0" VerticalAlignment="Top" Width="56" Height="28" Click="Button_Click"/>
         <ComboBox x:Name="searchField" HorizontalAlignment="Left" Margin="168,246,0,0" VerticalAlignment="Top" Width="233" RenderTransformOrigin="0.495,-1.194" FontSize="16">
             <TextBlock x:Name="searchCode" >Code</TextBlock>

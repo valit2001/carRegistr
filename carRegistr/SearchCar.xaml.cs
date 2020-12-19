@@ -19,9 +19,13 @@ namespace carRegistr
     /// </summary>
     public partial class SearchCar : Window
     {
+        AppContext db;
+
         public SearchCar()
         {
             InitializeComponent();
+
+            db = new AppContext();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -29,6 +33,11 @@ namespace carRegistr
             Window1 wind = new Window1();
             wind.Show();
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
