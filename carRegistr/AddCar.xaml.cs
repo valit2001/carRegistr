@@ -37,7 +37,7 @@ namespace carRegistr
             int tel = int.Parse(ownerTel.Text);
             string address = ownerAddress.Text;
             string workPlace = ownerWork.Text; 
-            string birthdate = ownerPasport.Text;
+            string birthdate = ownerBirthdate.Text;
 
             int number = int.Parse(carNum.Text);
             string code = carCode.Text;

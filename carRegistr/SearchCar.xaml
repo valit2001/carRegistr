@@ -14,8 +14,6 @@
         <ComboBox x:Name="searchField" HorizontalAlignment="Left" Margin="168,246,0,0" VerticalAlignment="Top" Width="233" RenderTransformOrigin="0.495,-1.194" FontSize="16">
             <TextBlock x:Name="searchCode" >Code</TextBlock>
             <TextBlock x:Name="searchNumber" >Number</TextBlock>
-            <TextBlock x:Name="searchSeria" >Seria</TextBlock>
-            <TextBlock x:Name="searchModel" >Model</TextBlock>
             <TextBlock x:Name="searchBrand" >Brand</TextBlock>
         </ComboBox>
         <TextBox x:Name="searchValue" HorizontalAlignment="Left" Height="35" Margin="635,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" FontSize="16"/>

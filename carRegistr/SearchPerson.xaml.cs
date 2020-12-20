@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace carRegistr
 {
@@ -37,6 +28,25 @@ namespace carRegistr
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            string owName = searchOwnerName.Text;
+
+            Owner ow = null;
+
+            using (AppContext DB = new AppContext())
+            {
+                ow = db.Owners.Where(b => b.Name == owName).FirstOrDefault();
+            }
+
+            if(ow != null)
+            {
+                MessageBox.Show(" Name: " + ow.Name + "\n ID:" + ow.ownerID + "\n Passport: "
+                    + ow.Pasport + "\n Address: " + ow.Address + "\n Birthdate :" + ow.Birthdate
+                    + "\n Tel: " + ow.Tel + "\n Work: " + ow.WorkPlace) ;
+            }
+            else
+            {
+                MessageBox.Show("---");
+            }
 
         }
     }
